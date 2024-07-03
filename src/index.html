@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8"> <!--выбор кодировки-->
+    <meta name="author" content="Roman Romain"> <!--Указание автора сайта. Видят поисковики, пользователи не видят-->
+    <meta name="description" content="Первая web-страница написанная мной"> <!--Описание сайта. Видят поисковики, пользователи не видят-->
+    <meta name="keywords"
+          content="Первый сайт,проверка, тест, html">
+    <title>Главная страница</title>
 </head>
-<body>
 
+<body>
+<h1>Roman Romain</h1> <!-- Так пишется комментарии -->
+<h2>Начинающий веб-разработчик</h2>
+<p>
+    E-mail: <a href="mailto:Romanromaindev@gmail.com" title="Написать письмо">Romanromaindev@gmail.com</a>
+</p>
+<form action="/src/display.php" method="post">
+    <fieldset name="welcome" id="welcome_id">
+        <legend>
+            <h2>Представьтесь пожалуйста</h2>
+        </legend>
+        <p>
+            <label for="firstname_id">Введите имя </label>
+            <input
+                    type="text"
+                    required
+                    title="Введите Ваше имя"
+                    name="firstname"
+                    id="firstname_id">
+        </p>
+        <p>
+            <label for="lastname_id">Введите фамилию </label>
+            <input
+                    type="text"
+                    required
+                    title="Введите Вашу фамилию"
+                    name="lastname"
+                    id="lastname_id">
+        </p>
+        <p>
+            <input type="submit" value="Поздороваться">
+        </p>
+    </fieldset>
+</form>
 </body>
 </html>
