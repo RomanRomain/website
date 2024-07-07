@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'roman/website',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => 'romanromain/website',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '3dd1b9242d948c9935bb8333002e8715f058f600',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => true,
         ),
         'nikic/php-parser' => array(
-            'pretty_version' => 'v5.0.2',
-            'version' => '5.0.2.0',
-            'reference' => '139676794dc1e9231bf7bcd123cfc0c99182cb13',
+            'pretty_version' => 'v5.1.0',
+            'version' => '5.1.0.0',
+            'reference' => '683130c2ff8c2739f4822ff7ac5c873ec529abd1',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
@@ -109,10 +109,10 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-        'roman/website' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        'romanromain/website' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '3dd1b9242d948c9935bb8333002e8715f058f600',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
