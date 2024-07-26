@@ -10,10 +10,8 @@ function myCount($arr, bool $countRecursive = false): int
         $i = 0;
         $counter = 0;
         while (isset($arr[$i])) {
-            $counter++;
-            $counter += $countRecursive ? myCount($arr[$i], $countRecursive) : 0;
-            echo "i = $i" . PHP_EOL;
-            echo "counter = $counter" . PHP_EOL;
+            $counter += is_array($arr[$i]) ? 1 : 0;
+            $counter += $countRecursive ? myCount($arr[$i], $countRecursive) : 1;
             $i++;
         }
         return $counter;
