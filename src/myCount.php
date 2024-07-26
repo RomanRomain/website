@@ -11,7 +11,9 @@ function myCount($arr, bool $countRecursive = false): int
         $counter = 0;
         while (isset($arr[$i])) {
             $counter++;
-            $counter = $countRecursive ? $counter + myCount($arr[$i], $countRecursive) : $counter;
+            $counter += $countRecursive ? myCount($arr[$i], $countRecursive) : 0;
+            echo "i = $i" . PHP_EOL;
+            echo "counter = $counter" . PHP_EOL;
             $i++;
         }
         return $counter;
